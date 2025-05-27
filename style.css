@@ -1,0 +1,97 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.chat-log {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: #fafafa;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 10px;
+  max-width: 75%;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.bubble.you {
+  background: #d4f4d7;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bubble.other {
+  background: #ffffff;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.bubble.system {
+  background: transparent;
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+.bubble .meta {
+  font-size: 0.75rem;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.bubble .text {
+  white-space: pre-wrap;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+input[type="text"], input[type="password"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+#sendBtn {
+  background-color: #4CAF50;
+}
+
+#leaveBtn {
+  background-color: #E74C3C;
+}
