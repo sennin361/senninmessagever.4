@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>仙人チャット</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h1>仙人チャット</h1>
+
+    <div class="chat-log"></div>
+
+    <form id="chatForm">
+      <input type="text" id="username" placeholder="名前" required />
+      <input type="text" id="message" placeholder="メッセージ" required autocomplete="off" />
+      <button type="submit" id="sendBtn">送信</button>
+      <button type="button" id="leaveBtn">退室</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
